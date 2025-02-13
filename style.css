@@ -23,7 +23,7 @@ h1, h2 {
     text-align: center;
 }
 .header h1 {
-    margin: 10px 0;
+    margin: 10px 100px;
 }
 .contact {
     margin: 10px 0;
@@ -32,6 +32,9 @@ h1, h2 {
 .contact a {
     color: #007bff;
     text-decoration: none;
+}
+.summary{
+    font-size: 14px;
 }
 .section {
     margin: 20px 0;
