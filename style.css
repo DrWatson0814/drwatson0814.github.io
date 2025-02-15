@@ -32,6 +32,12 @@ h1, h2 {
     color: #007bff;
     text-decoration: none;
 }
+a:visited{
+    color:#2c3e61;
+}
+a:hover {
+    color: #415a77;
+}
 .summary{
     font-size: 14px;
 }
