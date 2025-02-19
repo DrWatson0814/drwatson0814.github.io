@@ -32,6 +32,9 @@ h1, h2 {
     color: #007bff;
     text-decoration: none;
 }
+.githubIcon {
+    margin: absolute;
+}
 a:visited{
     color:#2c3e61;
 }
