@@ -1,80 +1,96 @@
+:root {
+--uranian-blue: #a9cef4ff;
+--outer-space: #36494eff;
+--black: #000000ff;
+--air-superiority-blue: #7ea0b7ff;
+--paynes-gray: #597081ff;
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
 }
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1, h2 {
-    color: #f7f8fa;
-    background-image: linear-gradient(45deg, #2c3e61, #778da9);
+h1,
+h2 {
+  color: #f7f8fa;
+  background-image: linear-gradient(45deg, #2c3e61, #778da9);
 }
 .header {
-    text-align: center;
+  text-align: center;
 }
 .header h1 {
-    margin: 10px 100px;
+  margin: 10px 100px;
 }
 .contact {
-    margin: 10px 0;
-    font-size: 14px;
+  margin: 10px 0;
+  font-size: 14px;
 }
 .contact a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
-a:visited{
-    color:#2c3e61;
+a:visited {
+  color: #2c3e61;
 }
 a:hover {
-    color: #415a77;
+  color: #415a77;
 }
-.summary{
-    font-size: 14px;
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-btns {
+    display: flex;
+    list-style-type: none;
+}
+.summary {
+  font-size: 14px;
 }
 .section {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .section h2 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #2c3e61;
-    padding-left: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2c3e61;
+  padding-left: 5px;
 }
 .item {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #555;
+  margin: 0;
+  font-size: 18px;
+  color: #555;
 }
 h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #555;
+  margin: 0;
+  font-size: 18px;
+  color: #555;
 }
 .item p {
-    margin: 5px 0;
-    font-size: 14px;
+  margin: 5px 0;
+  font-size: 14px;
 }
 .skills ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .skills ul li {
-    display: inline-block;
-    background: #415a77;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px;
+  display: inline-block;
+  background: #415a77;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0;
+  border-radius: 4px;
 }
