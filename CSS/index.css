@@ -1,9 +1,9 @@
 :root {
---uranian-blue: #a9cef4ff;
---outer-space: #36494eff;
---black: #000000ff;
---air-superiority-blue: #7ea0b7ff;
---paynes-gray: #597081ff;
+  --uranian-blue: #a9cef4ff;
+  --outer-space: #36494eff;
+  --black: #000000ff;
+  --air-superiority-blue: #7ea0b7ff;
+  --paynes-gray: #597081ff;
 }
 body {
   font-family: Arial, sans-serif;
@@ -12,6 +12,12 @@ body {
   padding: 0;
   color: #333;
   background-color: #f4f4f4;
+}
+
+.fa-solid fa-house {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .container {
   max-width: 800px;
@@ -57,12 +63,12 @@ a:hover {
   color: #415a77;
 }
 .nav-section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav-btns {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 .summary {
   font-size: 14px;
@@ -103,4 +109,44 @@ h3 {
   padding: 5px 10px;
   margin: 5px 5px 5px 0;
   border-radius: 4px;
+}
+
+
+
+@media (min-width: 360px) {
+
+    .nav-section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .resume-icon {
+        background-color: black;
+        
+    }
+
+    .resume-icon::after {
+        content: " Home";
+    }
+
+    .resume-icon::after {
+        content: " Home";
+    }
+
+    .resume-icon::after {
+        content: " Home";
+    }
+
+    .resume-icon::after {
+        content: " Home";
+    }
+
+    .resume-icon::after {
+        content: " Home";
+    }
+
+    .contact-icon::after {
+        content: " Home";
+    }
+
 }
