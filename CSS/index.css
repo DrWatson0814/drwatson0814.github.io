@@ -113,40 +113,42 @@ h3 {
 
 
 
-@media (min-width: 360px) {
+@media (min-width: 440px) {
 
     .nav-section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 10px;
         margin: 10px;
+        gap: 10px;
     }
 
     .resume-icon {
         background-color: black;
-        
+        font: bolder 800 24px /1 serif;
     }
 
     .resume-icon::after {
-        content: " Home";
+        content: "  Home";
     }
 
-    .resume-icon::after {
-        content: " Home";
+    .projects-icon::after {
+        content: "  Projects";
     }
 
-    .resume-icon::after {
-        content: " Home";
+    .skill-icon::after {
+        content: " Skills";
     }
 
-    .resume-icon::after {
-        content: " Home";
+    .work-icon::after {
+        content: "  Work Exp";
     }
 
-    .resume-icon::after {
-        content: " Home";
+    .education-icon::after {
+        content: "  Education";
     }
 
     .contact-icon::after {
-        content: " Home";
+        content: "  Contact Info";
     }
 
 }
