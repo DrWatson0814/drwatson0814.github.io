@@ -11,22 +11,6 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
-}
-
-/*Does this do anything?  */
-.fa-solid fa-house {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: linear-gradient(
     45deg,
     #999 5%,
@@ -38,6 +22,25 @@ body {
     #999 95%
   );
 }
+
+.contact {
+  margin: 20px auto;
+  padding: 20px;
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(
+  45deg,
+#999 5%,
+#fff 10%,
+#ccc 30%,
+#ddd 50%,
+#ccc 70%,
+#fff 80%,
+#999 95%
+); */
+
+}
 /* Is this VVV flipping tag right? */
 h1,  
 h2 {
@@ -47,12 +50,18 @@ h2 {
 .header {
   text-align: center;
 }
+
+h1 {
+    border-radius: 10px;
+}
 .header h1 {
+    /* border-radius:; */
   /* margin: 10px 100px; */
 }
 .contact {
   margin: 10px 0;
   font-size: 14px;
+  justify-content: center;
 }
 .contact a {
   color: #007bff;
@@ -62,7 +71,7 @@ a:visited {
   color: #2c3e61;
 }
 a:hover {
-  color: #415a77;
+  color: #8298b1;
 }
 .nav-section {
   display: flex;
@@ -72,18 +81,27 @@ a:hover {
   display: flex;
   list-style-type: none;
 }
-.summary {
-  font-size: 14px;
-}
+
 .section {
-  margin: 20px 0;
+   margin-bottom: 25px;
+   margin-top: 5px;
 }
+.summary {
+    font-size: 14px;
+    margin-left: 35px;
+    margin-right: 35px;
+    /* margin: 35px; */
+}
+
 .section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #2c3e61;
   padding-left: 5px;
+  text-align: center;
+  border-radius: 15px;
 }
 .item {
+    margin: 35px;
   margin-bottom: 15px;
 }
 .item h3 {
@@ -100,6 +118,11 @@ h3 {
   margin: 5px 0;
   font-size: 14px;
 }
+
+ul {
+    margin-left: 35px;
+}
+
 .skills ul {
   list-style: none;
   padding: 0;
@@ -125,7 +148,6 @@ h3 {
     }
 
     .resume-icon {
-        background-color: black;
         font: bolder 800 24px /1 serif;
     }
 
@@ -153,4 +175,64 @@ h3 {
         content: "  Contact Info";
     }
 
+}
+
+
+@media (min-width: 1024px) {
+    
+    body {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 30% 15% auto; 
+        /* grid-template-areas: 
+        "head a sum"
+        "head a sum"
+        "head a sum";    */
+    }
+    
+    /* .container {
+        display: grid;
+        grid-template-columns: 32% 100px auto;  
+        grid-template-rows: 100%;
+        align-items: start;
+    } */
+
+        
+    .nav-section {
+    display: grid; 
+    grid-column: 2 / 3;
+    grid-template-rows:  repeat(6, 130px);
+    align-items: center;
+    font-size: large;
+    /* align-content: start; */
+    }
+
+    .contact{
+        height: 40%;
+        text-align: center;
+        align-content: space-around;
+    }
+
+    #summary-section {
+        grid-area: sum;
+        grid-column: 3 / 4;
+    }
+
+    .summary {
+        display: grid;
+        grid-column: 3;
+    }
+
+    .container {
+        margin-top: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
