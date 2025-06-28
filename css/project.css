@@ -5,17 +5,32 @@
   --air-superiority-blue: #7ea0b7ff;
   --paynes-gray: #597081ff;
 }
+
+@font-face {
+  font-family: 'Crotah';
+  src: url('/fonts/crotah-font/CrotahFreeVersionItalic-z8Ev3.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 25px 182px 100px 100px 1fr;
+  grid-template-columns: 25px 1fr 25px;
   height: 100vh;
   width: 100vw;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #fff;
   background-image: url('/public/img/dark-grey-background.jpg');
+}
+
+.container {
+  height: 100vh;
+  /* width: 100vw; */
 }
 
 
@@ -40,7 +55,7 @@ h1,
 h2 {
   color: #f7f8fa;
   background-image: linear-gradient(45deg, #2c3e61, #778da9);
-  margin-left: 10px;
+  font-family: 'Crotah', sans-serif;
 }
 .header {
   text-align: center;

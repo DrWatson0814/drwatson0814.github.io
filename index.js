@@ -19,9 +19,9 @@ try {
             repoLink.classList.add('repo-info');
             repoLink.href = repo.html_url;
             repoLink.textContent = repo.name;
-            repoName.appendChild('repoLink');
-            repoInfo.appendChild('repoName');
-            repoContainer.appendChild('repoInfo');
+            repoName.appendChild(repoLink);
+            repoInfo.appendChild(repoName);
+            repoContainer.appendChild(repoInfo);
         };
     }catch(error) {
         console.error(error);
