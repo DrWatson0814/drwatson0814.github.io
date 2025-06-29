@@ -3,7 +3,7 @@
   <img>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/project.css" />
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css">
     <script src="https://kit.fontawesome.com/16eac1eb61.js" crossorigin="anonymous"></script>
     <title>Projects</title>
   </head>
@@ -11,55 +11,27 @@
     <main class="container">
       <section class="header">
         <h1>Shirley "Reed" Haddix</h1>
-        <p class="contact">
-          Phone: (859) 472-4255  Email:shirleyhaddix82@outlook.com
-        </p>
+        <p>Phone: (859) 472-4255  Email:shirleyhaddix82@outlook.com</p>  
       </section>
       <nav class="nav-section">
-        <a href="index.html" class="resume-icon"><i class="fa-solid fa-house"> Home</i></a>
-        <a href="projects.html" class="projects-icon"><i class="fa-solid fa-screwdriver-wrench"> Projects</i></a>
-        <a href="#skill-section" class="skill-icon"><i class="fa-solid fa-user-gear"> Skills</i></a>
-        <a href="#work-section" class="work-icon"><i class="fa-solid fa-person-digging"> Work Exp</i></a>
-        <a href="#education-section" class="education-icon"><i class="fa-solid fa-user-graduate"> Education</i></a>
-        <a href="#contact-section" class="contact-icon"><i class="fa-solid fa-phone-volume"> Contact Me</i></a>
+       <ul class="nav-btns">
+          <li><a href="index.html" class="resume-icon"><i class="fa-solid fa-house">  Home</i></a></li>
+          <li><a href="projects.html" class="projects-icon"><i class="fa-solid fa-screwdriver-wrench"> Projects</i></a></li>
+          <li><a href="#skill-section" class="skill-icon"><i class="fa-solid fa-user-gear"> Skills</i></a></li>
+          <li><a href="#work-section" class="work-icon"><i class="fa-solid fa-person-digging">  Work Exp</i></a></li>
+          <li><a href="#education-section" class="education-icon"><i class="fa-solid fa-user-graduate">  Education</i><a><li>
+          <li><a href="#contact-section" class="contact-icon"><i class="fa-solid fa-phone-volume">  Contact Me</i></a></li>
+        </ul>
       </nav>
-      <section class="section">
+      <section class="repo-display">
         <h2>Projects</h2>
-     
-      <!--* This is where the fetch function goes  -->
-
-      <div class="backgroundCall"></div>
-      <div id="repoList" class="repoMain"></div>
-      <!-- <div>
-        <h3>wk2WebDev_Personal_Project</h3>
-        <p>
-          This is a website, meant to operate along side a podcast of mine. It
-          acts, in a sense, as a hub for fans and the community. With different
-          sections like a episode guide, user submitted paranormal accounts, and
-          a paranormal wiki, visitors can quench their thirst for the occult.
-        </p>
-      </div>
-      <div>
-        <h3>drwatson0814.github.io</h3>
-        <p>
-          This is a meant to be both a resume and a growing portfolio of
-          projects I have created. Links will be used to move between the
-          different sections and pages.
-        </p>
-      </div>
-      <div>
-        <h3>hello-html</h3>
-        <p>
-          A project meant to be a snapshot of where I am at this point and where
-          I would like to see my
-        </p>
-      </div> -->
+           <!--* This is where the fetch function goes  -->
+         <div id="repoList" class="repoMain"></div>
       </section>
     </main>
     <footer>
-
-      <!-- TODO: Clean This UP -->
-            <section class="section">
+<!-- TODO: Clean This UP -->
+      <section class="contact-bottom">
         <div class="item">
           <h2 id="contact-section">Contact Information</h2>
           <p class="contact">
@@ -78,6 +50,6 @@
         </div>
       </section>
   </footer>
-  <script src="./index.js"></script>
+  <script src="/public/js/index.js" defer></script>
   </body>
 </html>

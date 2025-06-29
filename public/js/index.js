@@ -1,5 +1,5 @@
-document.getElementById('repoList');
-const userRepos = document.addEventListener('DOMContentLoaded', () => {
+const repoContainer = document.getElementById('repoList');
+document.addEventListener('DOMContentLoaded', () => {
 const GITHUB_USERNAME = 'DocWatson0814';
 const personalAccessToken = '';
 
@@ -14,7 +14,9 @@ try {
         
         for(const repo of data) {
             const repoInfo = document.createElement('div');
-            const repoName = document.createElement('h2');
+            repoInfo.classList.add('repoCards');
+            const repoName = document.createElement('h3');
+            repoName.classList.add('repo-name');
             const repoLink = document.createElement('a');
             repoLink.classList.add('repo-info');
             repoLink.href = repo.html_url;
@@ -24,7 +26,7 @@ try {
             repoContainer.appendChild(repoInfo);
         };
     }catch(error) {
-        console.error(error);
+        console.error('Could not fetch repos!');
     }
     
 };
